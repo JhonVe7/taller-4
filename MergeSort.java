@@ -6,10 +6,10 @@ import java.io.OutputStreamWriter;
 import java.util.Arrays;
 /*
 *
-*TALLER 3 - Estructura de Datos- punto 3
+*TALLER 4 - Estructura de Datos- punto 3
 *	@author JhonVe7
 *	@date 25-11-2017
-*	@version 2
+*	@version 4
 *
 */
 
