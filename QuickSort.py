@@ -1,5 +1,4 @@
 from random import randint
-from builtins import str
 
 
 def Quick_sort(V):
@@ -17,39 +16,16 @@ def Quick_sort(V):
         mayor = Quick_sort(mayor)
     return menor + igual + mayor
 
+
 def main():
     
     Tamain = (input("Escriba la Sucesion de numeros separados por comas \n"))
     print(Tamain)
-    Tamain_2 = Tamain.split(",")
+    Tamain_2 = Tamain.split("," or ".")
     print(Tamain_2)
-    Tamain_3 = Quick_sort(Tamain_2)
-    print(Tamain_3)
+    print(Quick_sort(Tamain_2))
     
-    Valor = (input("Ingrese un numero a buscar \n"))
-    
-    Inicio = 0
-    Final = (len(Tamain_3)-1)
-    Encontro = False
-    
-    while(not(Encontro) and Inicio <= Final):
-        mitad = int((Inicio + Final)/2)
-        if(Valor == Tamain_3[mitad]):
-            Encontro = True
-            Num = mitad
-        elif(Valor < (Tamain_3[mitad])):
-            Final = mitad - 1
-            
-        else:
-            Inicio = mitad + 1
-    print()
-    
-    if(Encontro):
-        print("El Numero se encuentra y se localiza en la posicion " + str(Num))
-    else:
-        print("El dato no se encuentra")
-    print()
-       
-       
 main()
+
+
 
