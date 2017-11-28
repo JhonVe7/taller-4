@@ -3,7 +3,7 @@
 /*
 *
 *TALLER 3 - Estructura de Datos- punto 3
-*	@author Jhon ve
+*	@author JhonVe7
 *	@date 25-11-2017
 *	@version 2
 *
@@ -28,7 +28,7 @@
  	
  	int x;
  	int y;
- 	cout <<"ingrese el tamaño del arreglo: " << endl;
+ 	cout <<"ingrese el tamaÃ±o del arreglo: " << endl;
  	cin >> x;
  	cout <<"ingrese numero que desea buscar: " << endl;
  	cin >> y;
