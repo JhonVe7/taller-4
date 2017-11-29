@@ -6,7 +6,7 @@ import java.io.OutputStreamWriter;
 import java.util.Arrays;
 /*
 *
-*TALLER 4 - Estructura de Datos- punto 3
+*TALLER 4 - Data Estructure - N° 3
 *	@author JhonVe7
 *	@date 25-11-2017
 *	@version 4
@@ -16,14 +16,14 @@ import java.util.Arrays;
 
 public class merge{
 	
-//Metodo para imprimir el arreglo
+// Method to print the arrangement
 public static void imprimir(int[] array){
 	for (int i = 0; i < array.length; i++) {
 	    System.out.print("[" + array[i] + "]");
 	 }
 }
 
-//Metodo 
+//Method
 public static void MergeSort(int a[]){
    if(vec.length<=1) return;
      int mitad= a.length/2;
@@ -33,7 +33,7 @@ public static void MergeSort(int a[]){
           MergeSort(der);       
           combinar(a, izq, der);
   }
-  //metodo
+  //Method array vector
   public static void combinar(int a[], int izq[],int der[]){
           int x=0;
           int y=0;
@@ -57,8 +57,9 @@ public static void MergeSort(int a[]){
                   }
           }
   }
-// main, inicio del programa
-  public static void main(String[] args) throws IOException {
+
+// main, start of the program
+public static void main(String[] args) throws IOException {
 
 	BufferedReader br = new BufferedReader (new InputStreamReader (System.in));	
 	BufferedWriter bw = new BufferedWriter (new OutputStreamWriter (System.out));
