@@ -2,14 +2,14 @@
 #include <cstdlib>
 /*
 *
-*TALLER 4 - Estructura de Datos- punto 5
+*TALLER 4 - Data Estructure- N° 5
 *	@author JhonVe7
 *	@date 25-11-2017
 *	@version 2
 *
 */
  using namespace std;
- //metodo lineaSearch
+// method lineaSearch
  int linearSearch(int array[],int tam, int valor){
  	for(int i = 0 ; i < tam ; i++){
  		if(valor == array [i]){
@@ -23,7 +23,7 @@
  		cout <<" ["<<array[i]<<"] \n";
 	 }
   }
- //aplicacion del metodo
+ // application of the method
  int main (){
  	
  	int x;
