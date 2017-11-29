@@ -5,7 +5,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 /*
 *
-*TALLER 4 - Estructura de Datos- punto 7
+*TALLER 4 - Data Estructure- N° 7
 *	@author JhonVe7
 *	@date 27-11-2017
 *	@version 2
@@ -13,13 +13,13 @@ import java.io.OutputStreamWriter;
 */
 
 public class Interpolacion {
-	 
+	 //print Array
 	public static void imprimeArray(int[] array){
 		for (int i = 0; i < array.length; i++) {
 	            System.out.print("[" + array[i] + "]");
 	        }
 	    }
-	
+	//search method
 	public static int BusquedaInterpolacion(int []vector, int buscar){
 		int lowerBound = 0;
 		int upperBound = vector.length - 1;
@@ -42,7 +42,7 @@ public class Interpolacion {
 	}
 		return -1;
 }
-
+//main. program start
  public static void main(String[] args) throws IOException {
 	BufferedReader br = new BufferedReader (new InputStreamReader (System.in));	
 	BufferedWriter bw = new BufferedWriter (new OutputStreamWriter (System.out));		
