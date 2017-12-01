@@ -19,14 +19,14 @@ def Quick_sort(V):
 
 def main():
     
-    Tamain = (input("Escriba la Sucesion de numeros separados por comas \n"))
+    Tamain = (input("Escriba los numeros separados por comas \n"))
     print(Tamain)
     Tamain_2 = Tamain.split(",")
     print(Tamain_2)
     Tamain_3 = Quick_sort(Tamain_2)
     print(Tamain_3)
     
-    Valor = (input("Ingrese un numero a buscar \n"))
+    Valor = (input("Ingrese el numero que desea buscar \n"))
     
     Inicio = 0
     Final = (len(Tamain_3)-1)
@@ -45,7 +45,7 @@ def main():
     print()
     
     if(Encontro):
-        print("El Numero se encuentra y se localiza en la posicion " + str(Num))
+        print("El Numero se encuentra en la posicion " + str(Num))
     else:
         print("El dato no se encuentra")
     print()
