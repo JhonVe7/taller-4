@@ -4,7 +4,7 @@
 #include <iostream>
 /*
 *
-*TALLER 4 - Data Estructure- N° 7
+*TALLER 4 - Data Estructure- N° 2
 *	@author JhonVe7
 *	@date 27-11-2017
 *	@version 2
