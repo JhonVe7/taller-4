@@ -1,15 +1,17 @@
+#include <vector>
+#include <string>
+#include <sstream>
 #include <iostream>
-#include <cstdlib>
 /*
 *
-*TALLER 4 - Data Estructure- N° 5
-*	@author JhonVe7
+*TALLER 4 - Data estructure- N° 5
+*	@author Jhon ve
 *	@date 25-11-2017
 *	@version 2
 *
 */
  using namespace std;
-// method lineaSearch
+ //method lineaSearch
  int linearSearch(int array[],int tam, int valor){
  	for(int i = 0 ; i < tam ; i++){
  		if(valor == array [i]){
@@ -23,17 +25,37 @@
  		cout <<" ["<<array[i]<<"] \n";
 	 }
   }
- // application of the method
+ //applicacion of the method
  int main (){
  	
  	int x;
  	int y;
- 	cout <<"ingrese el tamaño del arreglo: " << endl;
+ 	
+ 	string str;
+    vector<int> vect;
+    
+    cout <<"ingrese el tamaño del arreglo: " << endl;
  	cin >> x;
+    int a[x];
+    cout << "Digite los numeros separados por coma (,): \n";
+    cin >> str;
+    stringstream ss(str);
+    int i;
+    
+    while (ss >> i){
+        vect.push_back(i);
+        if (ss.peek() == ',')
+            ss.ignore();
+    }
+    for (i=0; i< vect.size(); i++){
+    	a[i] = vect.at(i);
+	}
+        
+ 	
+ 	
  	cout <<"ingrese numero que desea buscar: " << endl;
  	cin >> y;
- 	
- 	int a[] = {1+ rand()% 50};
+
 	int result = linearSearch(a,x,y);
 		
 	arreglo(a,x);
