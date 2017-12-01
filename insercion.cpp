@@ -2,10 +2,18 @@
 #include <string>
 #include <sstream>
 #include <iostream>
-
+/*
+*
+*TALLER 4 - Data Estructure- NÂ° 7
+*	@author JhonVe7
+*	@date 27-11-2017
+*	@version 2
+*
+*/
  using namespace std;
 
- void InsertionSort(int array[] , int Tm){ //Method InsertionSort
+ //Method InsertionSort
+ void InsertionSort(int array[] , int Tm){ 
 
 	 int pos;
 	 int aux;
@@ -25,21 +33,21 @@
 		 array[pos] = aux;
 	}
 
- }//end Method
-
-  void Imprimir_Arreglo(int array[], int tam){ //method to print array
+ }
+//method to print array
+  void Imprimir_Arreglo(int array[], int tam){ 
   	for(int i = 0 ; i < tam ; i++){
  		cout << "["<<array[i]<<"]";
 	 }
-  }//end method
-
- int main(){//Main method
+  }
+//Main method
+ int main(){
 
 	 	int x;
 	  	string Cadena;
 	    vector<int> vect;
 
-	    cout <<"ingrese el tamaño del arreglo: " << endl;
+	    cout <<"ingrese el tamaÃ±o del arreglo: " << endl;
 	    cin >> x;
 	    int Vector[x];
 	    cout << "Digite la cadena de caracteres separado por comas: \n";
@@ -55,7 +63,7 @@
 	    }
 
 	    int Tm = vect.size();
-	    cout << "Tamaño del vector " << Tm << endl;
+	    cout << "TamaÃ±o del vector " << Tm << endl;
 	    for (i=0; i< Tm; i++){
 
 	     	Vector[i] = vect.at(i);
@@ -71,4 +79,3 @@
 	    return 0;
 
  }
-
